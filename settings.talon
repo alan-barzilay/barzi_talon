@@ -1,5 +1,13 @@
 -
 settings():
+
+    # Enable the Talon mode indicator
+    user.mode_indicator_show = true
+    # user.mode_indicator_x = 0
+    # user.mode_indicator_y = 1
+    # 30pixels diameter
+    # user.mode_indicator_size = 30
+
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
 

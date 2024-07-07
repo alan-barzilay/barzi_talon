@@ -12,7 +12,6 @@ mode: sleep
 # false positives during normal sleep mode, normally a good thing).
 
 # However, ignored background speech during sleep mode also counts as an utterance.
-
 # Thus, if you say "blah blah blah talon wake", these won't trigger, because "blah
 # blah blah" was part of the same utterance. You have to say "blah blah blah" <pause,
 # wait for speech timeout>, "talon wake" <pause, wait for speech timeout>.
@@ -28,3 +27,7 @@ mode: sleep
 #    user.talon_mode()
 
 ^(talon wake)+$: speech.enable()
+
+settings():
+    # Enable the Talon mode indicator
+    user.mode_indicator_show = false
